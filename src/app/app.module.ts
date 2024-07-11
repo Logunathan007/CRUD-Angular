@@ -8,6 +8,7 @@ import { GetDataComponent } from './get-data/get-data.component';
 import { PutDataComponent } from './put-data/put-data.component';
 import { PostDataComponent } from './post-data/post-data.component';
 import { DeleteDataComponent } from './delete-data/delete-data.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DeleteDataComponent } from './delete-data/delete-data.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

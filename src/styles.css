@@ -7,14 +7,79 @@
 body,app-root{
   width:100vw;
   height: 100vh;
+}
+
+.box{
+  width: 90vw;
+  min-height: 90vh;
+  max-height: fit-content;
+  /* border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px black; */
+  padding: 10px;
   display: flex;
+  gap:20px;
+  flex-grow: 1;
   flex-wrap: wrap;
-  gap:10px
 }
-
-.comp{
-  width: 300px;
-  height: 300px;
+.datas{
+  width: 90%;
+  height: 80%;
+  max-height: fit-content;
+  margin: auto;
+}
+.box2{
+  display: flex;
+  width: 50vw;
+  margin: 0px auto;
+  flex-flow: row;
+  gap:10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.get h1{
+  position: sticky;
+}
+.req{
+  min-width: 300px;
+  height: min(300px,40%);
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
+.get{
+  border: 1px solid black;
+  width: 400px;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+  max-height: fit-content;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.display{
+  width: 70%;
+  margin:5px auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
 
+}
+input{
+  width: 80%;
+  height: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+button{
+  font-size: 1rem;
+  padding: 5px;
+  width: 100px;
+  margin: 10px auto;
+}
