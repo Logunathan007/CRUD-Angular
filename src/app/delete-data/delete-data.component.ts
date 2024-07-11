@@ -12,7 +12,7 @@ export class DeleteDataComponent {
   constructor(private cs:CommunicateService){}
 
   deleteReq(){
-    this.cs.postRequest(this.id).subscribe((data)=>{
+    this.cs.deleteRequest(this.id).subscribe((data)=>{
       try{
         console.log(data);
       }catch(e){
